@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Jersey;
+  src: url(./fonts/JerseyM54-aLX9.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* font-family: Jersey; */
+  height: 100vh;
+  background: url('./pic/math.jpeg')no-repeat center center/cover;
+}
+
+.container{
+width: 100%;
+height: 100vh;
+display: grid;
+justify-content: center;
+align-items: center;
+
+}
+
+.calc{
+  padding: 20px;
+  min-width: 350px;
+  min-height: 400px;
+  margin: 0px auto;
+  background-color: rgb(0, 1, 29)  ;
+  border: 5px solid rgb(247, 247, 247);
+  border-radius: 5px;
+
+
+}
+
+.result{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  font-size: 30px;
+  width: 100%;
+  height: 70px;
+  color: rgb(0, 1, 29);
+  border: 5px solid rgb(0, 200, 255);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+.result span{
+  font-size: 10px;
+  align-self: flex-end;
+}
+
+.rows{
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.rows > div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+
+.numbers {
+  grid-area: 2 / 1 / span 3 / span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+
+}
+
+.AC{
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.equal{
+  grid-area:  span 1 / span 2;
+}
+
+.btns{
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 183, 255, 0.771) ;
+  border: 1px solid #fff;
+}
+.btns:hover{
+  transform: scale(.95);
+  background: rgba(0, 183, 255, 0.9) ;
+
+}
+
+.btnNumbers{
+  background: rgb(255, 255, 255) ;
+  border: 2px solid rgb(0, 200, 255);
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 3px;
+}
+.btnNumbers:hover{
+  transform: scale(.95);
+  background: rgb(211, 211, 211) ;
+}
